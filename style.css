@@ -1,0 +1,335 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* -----------------------------------------GLOBAL STYLES----------------------------------------- */
+
+:root {
+    --font-family: Ubuntu, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --base-primary: #00b0d9;
+    --shade-primary: #007b98;
+    --tint-primary: #00d2db;
+    --base-secondary: #1CFFB0;
+    --shade-secondary: #11996A;
+    --tint-secondary: #77FFD0;
+    --grey-base: #181B24;
+    --grey-shade: #07080b;
+    --grey-tint: #464950;
+    --xl: 2.4rem;
+    --l: 1.602rem;
+    --m: 1.266rem;
+    --s: 1.125rem;
+    --p: 1rem;
+    --a: 1rem;
+    --nav-height: 3.5rem;
+}
+
+
+body {
+    font-family: var(--font-family);
+    color: #000;
+    /* background-image: url(images/bgi.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h2, h3 {
+    font-weight: 500;
+}
+
+h1 {
+    font-family: Aoboshi One;
+    font-size: var(--xl);
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    color: var(--grey-base);
+}
+
+h2 {
+    font-size: var(--l);
+}
+
+h3 {
+    font-size: var(--m);
+}
+
+h4 {
+    font-size: var(--s);
+    font-weight: 400;
+}
+
+p, span, label {
+    font-size: var(--p);
+    font-weight: 300;
+}
+
+a{
+    font-size: var(--a);
+    text-decoration: none;
+    font-weight: 300;
+    color: var(--grey-base);
+}
+
+ul {
+    list-style: none;
+}
+
+.main-container {
+    background-color: #46495043;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: var(--nav-height);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+/* -----------------------------------------COMPONENTS----------------------------------------- */
+
+.btn {
+    font-size: var(--a);
+    border-radius: 0.3rem;
+    padding: 0.8rem 1.2rem;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: linear-gradient(40deg, #9707bb 30%, #c282d2 100%);
+    color: #ffffff;
+}
+
+.btn-secondary {
+    color: #ffffff;
+    background: linear-gradient(40deg, var(--base-primary)30%, var(--base-secondary)100%);
+}
+
+
+/* -----------------------------------------NAV BAR----------------------------------------- */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: var(--nav-height);
+    background-color: #e9e7e77a;
+    backdrop-filter: blur(7px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.2px #d3d6dd2c solid ;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    margin-left: 1.5rem;
+
+}
+
+.logo-img {
+    width: 2rem;
+}
+
+.links-container {
+    margin-right: 1.5rem;
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links {
+    display: block;
+    font-size: var(--a);
+    text-decoration: none;
+    font-weight: 300;
+    color: var(--grey-base);
+    transition: transform 0.1s ease-out 0.5s;
+
+}
+
+.nav-links:hover, .nav-links:active {
+    color: var(--shade-primary);
+    text-shadow: 0rem 0.05rem 1.5rem #b5b6b9;
+    transform: translateY(-0.1rem);
+
+}
+
+
+/* -----------------------------------------HERO SECTION----------------------------------------- */
+
+.hero-section {
+    height: calc(100vh - (var(--nav-height) + 1rem));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: #e9e7e77a;
+    backdrop-filter: blur(46px);
+    border-radius: 0.8rem;
+    margin: 0.5rem 0;
+}
+
+.hero-img{
+    width: 10rem;
+}
+
+.hero-p {
+    text-align: center;
+    margin-bottom: 0.8rem;
+}
+
+
+.hero-btn {
+    display: flex;
+    gap: 0.7rem;
+}
+
+
+
+/* -----------------------------------------ABOUT ME SECTION----------------------------------------- */
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - var(--nav-height));
+    margin-top: var(--nav-height);
+    background-color: #e9e7e77a;
+    backdrop-filter: blur(46px);
+    border-radius: 0.8rem;
+    gap: 6rem;
+}
+
+
+.about-me-text{
+    margin: 2rem 2rem 0;
+    text-align: center;
+}
+
+.about-me-h {
+    margin-bottom: 1rem;
+}
+
+
+.about-me-container {
+    margin: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    justify-items: center;
+}
+
+.facts {
+    background: linear-gradient(40deg, var(--base-primary)30%, var(--base-secondary)100%);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 1rem;
+    gap: 1rem;
+    transition: transform  0.25s ease-in-out;
+}
+
+.facts:hover {
+    transform: scale(1.05);
+
+}
+
+
+.fact-icons {
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+
+.fact-icons-container {
+    padding: 0.8rem;
+    border-radius: 1rem;
+    background: linear-gradient(40deg, #9707bb 30%, #c282d2 100%);
+    width: fit-content;
+
+}
+
+
+/* -----------------------------------------PROJECTS SECTION----------------------------------------- */
+
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: var(--nav-height);
+    background-color: #e9e7e77a;
+    backdrop-filter: blur(46px);
+    border-radius: 0.8rem;
+}
+
+
+.projects-section-text {
+    text-align: center;
+    margin: 2rem 2rem 0;
+}
+
+.projects-section-h{
+    margin-bottom: 1rem;
+}
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 0 2rem;
+}
+
+
+.project-card {
+    background-image: url(images/bgi.jpg);
+    background-size: cover;
+    height: 27rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+
+.project {
+    background: linear-gradient(40deg, var(--base-primary)30%, var(--base-secondary)100%);
+    height: 65%;
+    padding: 1.5rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.used-techs-container {
+    display: flex;
+    gap: 0.2rem;
+    flex-wrap: wrap;
+}
+
+.used-techs {
+    background: linear-gradient(40deg, #9707bb 30%, #c282d2 100%);
+    color: #ffffff;
+    padding: 0.1rem;
+    border-radius: 0.4rem;
+}

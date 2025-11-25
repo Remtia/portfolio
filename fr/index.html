@@ -1,28 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Remtia's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>Mon Portfolio</title>
 </head>
 <body>
     <div class="main-container">
 
+
         <header>
 
             <nav class="navbar">
-                <a class="logo" href="#">Portfolio</a>
+                <a class="logo" href="#"><img src="#" alt="RB logo"><span>Portfolio</span></a>
 
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About me</a></li>
-                    <li><a href="#"></a>Projects</li>
-                    <li><a href="#"></a>Skills</li>
-                    <li><a href="#"></a>Contact me</li>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="#about-me">À Propos</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-
-                <div class="mode-toggle">
 
                 </div>
             </nav>
@@ -33,12 +35,12 @@
                     <img src="#" alt="Remtia">
                 </div>
 
-                <h3>Hello, welcome to my portfolio I am Remtia Bitoka</h3>
-                <p>I am passionate about creation of innovative Web-apps experiences and learning new technologies. I turn ideas into elegant, fast and high performances applications from the ground up.</p>
+                <h1>Bonjour, bienvenue sur mon portfolio, je suis Remtia Bitoka</h1>
+                <p>Passionné par la création d'expériences web modernes et intuitives. Je transforme des idées en applications élégantes, rapide et performantes.</p>
 
                 <ul>
-                    <li><a class="button button-primary" href="#"></a>Get in touch</li>
-                    <li><a class="button button-secondary" href="#"></a>See my projects</li>
+                    <li><a class="button button-primary" href="#contact">Me contactez</a></li>
+                    <li><a class="button button-secondary" href="#projects">Voir mes projets</a></li>
                 </ul>
 
                 <ul>
@@ -49,48 +51,48 @@
             </section>
         </header>
         
-        <article class="about-me">
+        <article id="about-me" class="about-me">
 
             <div class="about-me-text">
-                <h2>About me</h2>
-                <p>I am a Fullstack engineer with 3 years of experience transitioned to DevOps and Cloud engineering. I have solid knowlegde in ML/AI and AI integration mastery.</p>
+                <h2>À propos de moi</h2>
+                <p>Je suis un ingénieur Fullstack avec 3 ans d’expérience, reconverti en ingénierie DevOps et Cloud. Je possède de solides connaissances en ML/IA ainsi qu’une maîtrise de l’intégration de l’IA.</p>
             </div>
 
             <div class="about-me-container">
 
                 <div class="facts">
                     <img class="about-me-icons" src="#" alt="">
-                    <h3>Design</h3>
-                    <p>Modern, elegant, interactive and intuitive UI and UX.</p>
+                    <h3>Désign</h3>
+                    <p>Une interface utilisateur et une expérience utilisateur modernes, élégantes, interactives et intuitives.</p>
                 </div>
 
                 <div class="facts">
                     <img class="about-me-icons" src="#" alt="">
-                    <h3>Development</h3>
-                    <p>Clean and high performance code maintained by latest tools.</p>
+                    <h3>Développement</h3>
+                    <p>Un code propre et performant, maintenu grâce aux outils les plus récents.</p>
                 </div>
 
                 <div class="facts">
                     <img class="about-me-icons" src="#" alt="">
-                    <h3>Deployment</h3>
-                    <p>Fast, safe and secure deployment by latest DevOps tools.</p>
+                    <h3>Déploiement</h3>
+                    <p>Un déploiement rapide, sûr et sécurisé grâce aux derniers outils DevOps.</p>
                 </div>
 
                 <div class="facts">
                     <img class="about-me-icons" src="#" alt="">
                     <h3>Collaboration</h3>
-                    <p>Great teamwork, communications skills and goal-oriented.</p>
+                    <p>Excellente capacité de travail en équipe, bonnes compétences en communication et orientation vers les objectifs.</p>
                 </div>
             </div>
             
 
         </article>
 
-        <section class="projects-section">
+        <section id="projects" class="projects-section">
 
             <div class="projects-section-text">
-                <h2>Projects</h2>
-                <p>Discover a set of my latest realizations.</p>
+                <h2>Projets</h2>
+                <p>Découvrez une sélection de mes réalisations récentes:</p>
             </div>
 
             <div class="projects-container">
@@ -99,7 +101,7 @@
 
                     <div class="project">
                         <h3>R-Health</h3>
-                        <p>R-Health is an cross-platform application for hospitals and pharmacies patients registration and medication prescription.</p>
+                        <p>R-Health est une application multiplateforme destinée à l’enregistrement des patients dans les hôpitaux et les pharmacies, ainsi qu’à la prescription de médicaments.</p>
                         <div class="used-techs">
                             <span>React & React native</span>
                             <span>Node.js</span>
@@ -109,7 +111,7 @@
                         
                         <div>
                             <a href="#"><img src="#" alt="Github icon"><span>Code</span></a>
-                            <a href="#"><img src="#" alt="Open Icon"><span>See Demo</span></a>
+                            <a href="#"><img src="#" alt="Open Icon"><span>Voir Demo</span></a>
                         </div>
 
                     </div>
@@ -121,7 +123,7 @@
 
                     <div class="project">
                         <h3>R-Housing</h3>
-                        <p>R-Housing is a housing cross-platform application listing proprieties, apartments and hotels. Owners and tents connects to do business.</p>
+                        <p>R-Housing est une application multiplateforme pour l’immobilier, listant des propriétés, appartements et hôtels. Propriétaires et locataires se connectent pour faire des affaires.</p>
                         <div class="used-techs">
                             <span>React & React native</span>
                             <span>Node.js</span>
@@ -131,7 +133,7 @@
                         
                         <div>
                             <a href="#"><img src="#" alt="Github icon"><span>Code</span></a>
-                            <a href="#"><img src="#" alt="Open Icon"><span>See Demo</span></a>
+                            <a href="#"><img src="#" alt="Open Icon"><span>Voir Demo</span></a>
                         </div>
 
                     </div>
@@ -145,7 +147,7 @@
 
                     <div class="project">
                         <h3>R-CleanTP</h3>
-                        <p>R-CleanTP is an cross-platform application for ordering express cleaning services in Togo, fast, efficient and reliable.</p>
+                        <p>R-CleanTP est une application multiplateforme pour commander des services de nettoyage express au Togo, rapide, efficace et fiable.</p>
                         <div class="used-techs">
                             <span>React & React native</span>
                             <span>Node.js</span>
@@ -155,7 +157,7 @@
                         
                         <div>
                             <a href="#"><img src="#" alt="Github icon"><span>Code</span></a>
-                            <a href="#"><img src="#" alt="Open Icon"><span>See Demo</span></a>
+                            <a href="#"><img src="#" alt="Open Icon"><span>Voir Demo</span></a>
                         </div>
 
                     </div>
@@ -169,7 +171,7 @@
 
                     <div class="project">
                         <h3>R-Psy</h3>
-                        <p>R-Psy is an cross-platform application that connects users and psychologist therapist that accompany them and give therapy.</p>
+                        <p>R-Psy est une application multiplateforme qui connecte les utilisateurs avec des psychologues et thérapeutes, les accompagnant et leur fournissant des séances de thérapie.</p>
                         <div class="used-techs">
                             <span>React & React native</span>
                             <span>Node.js</span>
@@ -179,7 +181,7 @@
                         
                         <div>
                             <a href="#"><img src="#" alt="Github icon"><span>Code</span></a>
-                            <a href="#"><img src="#" alt="Open Icon"><span>See Demo</span></a>
+                            <a href="#"><img src="#" alt="Open Icon"><span>Voir Demo</span></a>
                         </div>
 
                     </div>
@@ -193,7 +195,7 @@
 
                     <div class="project">
                         <h3>R-Market</h3>
-                        <p>R-Market is an cross-platform E-marketplace application for phone and computers resellers in Togo, connecting sellers, resellers and customers..</p>
+                        <p>R-Market est une application multiplateforme de marché en ligne pour les revendeurs de téléphones et d’ordinateurs au Togo, connectant vendeurs, revendeurs et clients.</p>
                         <div class="used-techs">
                             <span>React & React native</span>
                             <span>Node.js</span>
@@ -203,7 +205,7 @@
                         
                         <div>
                             <a href="#"><img src="#" alt="Github icon"><span>Code</span></a>
-                            <a href="#"><img src="#" alt="Open Icon"><span>See Demo</span></a>
+                            <a href="#"><img src="#" alt="Open Icon"><span>Voir Demo</span></a>
                         </div>
 
                     </div>
@@ -217,7 +219,7 @@
 
                     <div class="project">
                         <h3>R-Jobs</h3>
-                        <p>R-Jobs is an web application for job seeking and automatic applications powered by AI for students at the end of their studies..</p>
+                        <p>R-Jobs est une application web pour la recherche d’emploi et les candidatures automatiques, propulsée par l’IA, destinée aux étudiants en fin d’études.</p>
                         <div class="used-techs">
                             <span>React</span>
                             <span>Node.js</span>
@@ -227,7 +229,7 @@
                         
                         <div>
                             <a href="#"><img src="#" alt="Github icon"><span>Code</span></a>
-                            <a href="#"><img src="#" alt="Open Icon"><span>See Demo</span></a>
+                            <a href="#"><img src="#" alt="Open Icon"><span>Voir Demo</span></a>
                         </div>
 
                     </div>
@@ -236,11 +238,11 @@
 
         </section>
 
-        <section class="skills-section">
+        <section id="skills" class="skills-section">
 
             <div class="skills-section-text">
-                <h2>Skills</h2>
-                <p>Technologies and Tools that I master</p>
+                <h2>Compétences</h2>
+                <p>Technologies et outils que je maîtrise</p>
             </div>
 
             <div class="skills-container">
@@ -356,7 +358,7 @@
 
                 <div class="skills">
 
-                    <h3>Other Tools and Techs</h3>
+                    <h3>Autre Outils</h3>
                     
                     <div><span>Figma</span> <span>99%</span></div>
 
@@ -384,11 +386,11 @@
             </div>
         </section>
 
-        <section class="cta-section">
+        <section id="contact" class="cta-section">
 
             <div class="cta-text">
-                <h2>Contact me</h2>
-                <p>Do you have a project in mind? You want a talented DevOps engineer? Get in touch with me without hesitations.</p>
+                <h2>Contact-moi</h2>
+                <p>Vous avez un projet en tête ? Vous recherchez un ingénieur DevOps talentueux ? Contactez-moi sans hésitation.</p>
             </div>
 
             <div class="cta-container">
@@ -412,8 +414,8 @@
                         <img src="#" alt="Phone Icon">
 
                         <div class="phone-content">
-                            <h4>Phone</h4>
-                            <a href="tel:+22891385284"></a>
+                            <h4>Numéro</h4>
+                            <a href="tel:+22891385284">+22891385284</a>
                         </div>
 
                     </div>
@@ -427,7 +429,7 @@
                         <img src="#" alt="Address Icon">
 
                         <div class="address-content">
-                            <h4>Location</h4>
+                            <h4>Localisation</h4>
                             <span>Lome, Togo</span>
                         </div>
                         
@@ -439,7 +441,7 @@
 
                     <form action="" method="post">
 
-                        <label for="name">Name</label>
+                        <label for="name">Nom</label>
                         <input id="name" type="text" placeholder="Your name">
 
                         <label for="email">Email</label>
@@ -448,7 +450,7 @@
                         <label for="message">Message</label>
                         <textarea name="message" id="message" placeholder="Your message"></textarea>
 
-                        <button id="button button-submit" type="submit">Send Message</button>
+                        <button id="button button-submit" type="submit">Envoyer un message</button>
 
                     </form>
 
@@ -471,7 +473,7 @@
             </div>
 
             <div class="copyright">
-                <p class="copyright-p">Remtia's porfolio &copy; 2025, All rights reserved.</p>
+                <p class="copyright-p">Remtia's porfolio &copy; 2025, Tout droit reservés.</p>
             </div>
 
         </footer>
