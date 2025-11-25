@@ -108,8 +108,8 @@ main {
 }
 
 .btn-primary {
-    background: linear-gradient(40deg, #9707bb 30%, #c282d2 100%);
-    color: #ffffff;
+    background: #ffffff;
+    color: var(--grey-base);
 }
 
 .btn-secondary {
@@ -263,7 +263,7 @@ main {
 .fact-icons-container {
     padding: 0.8rem;
     border-radius: 1rem;
-    background: linear-gradient(40deg, #9707bb 30%, #c282d2 100%);
+    background: #ffffff;
     width: fit-content;
 
 }
@@ -291,6 +291,7 @@ main {
     margin-bottom: 1rem;
 }
 .projects-container {
+    width: fit-content;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
@@ -328,8 +329,54 @@ main {
 }
 
 .used-techs {
-    background: linear-gradient(40deg, #9707bb 30%, #c282d2 100%);
-    color: #ffffff;
+    background: #4649507f;
+    color: var(--tint-primary);
     padding: 0.1rem;
     border-radius: 0.4rem;
+}
+
+
+.project-icon-container {
+    display: flex;
+    gap: 1rem;
+}
+
+
+.project-github-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+
+.project-github-icon-container {
+    background-color: #ffffff;
+    padding: 0.4rem 2rem;
+    border-radius: 0.5rem;
+    width: fit-content;
+}
+
+.project-github-icon-layout {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.project-see-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+
+.project-see-icon-container {
+    background-color: #4649507f;
+    padding: 0.4rem 2rem;
+    border-radius: 0.5rem;
+    width: fit-content;
+}
+
+.project-see-icon-layout {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
